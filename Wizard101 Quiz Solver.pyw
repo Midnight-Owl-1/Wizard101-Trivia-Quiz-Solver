@@ -278,7 +278,7 @@ class GUI():
         self.startButton['state'] = DISABLED
 
         if(self.startButton['text'] == "Quit"):
-            quit()
+            self.windowClose()
 
     #TK inter's mainloop - only start this after doing all of the other setup, because this haults the main thread
     def mainloop(self):
@@ -362,7 +362,7 @@ class Browser(Thread):
         driver.find_element(By.XPATH,'//input[@value="Login"]').click()
 
         #Ask the user if there has been any captcha request
-        self.gui.descLabel['text'] = 'Check if there is Captcha to do\nIf so, do it, and complete the login.\nIf not, just press the "Continue" button here'
+        self.gui.descLabel['text'] = 'Check if there is CAPTCHA to do\nIf so, do it, and complete the login.\nIf not, just press the "Continue" button here'
         self.gui.startButton['text'] = "Continue"
         self.gui.startButton['state'] = NORMAL
         winsound.Beep(830, 300)
@@ -393,8 +393,6 @@ class Browser(Thread):
                 #Navigate the that url in the browser
                 driver.get(url)
                 
-                time.sleep(1)
-
                 #If we already did this quiz today, just skip onto the next one
                 if "You exceeded the number of quizzes allowed today" in driver.page_source:
                     continue
@@ -447,12 +445,13 @@ class Browser(Thread):
                         driver.find_element(By.XPATH,'//a[@class="kiaccountsbuttongreen"]').click()
 
                         #Alert the user that the quiz is done, and the CAPTCHA needs to be completed. Wait untill they press continue
-                        self.gui.descLabel['text'] = 'In the browser, complete the CAPTCHA\n Then press the green "Claim your Reward" button.\nAfter you are done, press the "Continue" button here'
+                        self.gui.descLabel['text'] = 'In the browser, press the "Claim your Reward" button\nThen complete the CAPTCHA.\nAfter you are done, press the "Continue" button here'
                         self.gui.startButton['text'] = "Continue"
                         self.gui.startButton['state'] = NORMAL
                         winsound.Beep(830, 300)
                         while(self.gui.startButton['state'] == NORMAL):
                             time.sleep(0.5)
+                        self.gui.descLabel['text'] = 'Completing your trivia questions...'
             
             #Alert the user that all of the trivia quizes are completed for today
             winsound.Beep(830, 300)
