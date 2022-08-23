@@ -18,7 +18,7 @@
 - It will continue this way until all quizzes for the day are completed
 
 # Things to Note
-- This program only works on the Windows operating system with Google chrome installed
+- This program only works on the Windows operating system with Google Chrome installed
 - It takes about 13 minutes to complete the 10 quizes for one day (getting you 100 Crowns)
 - Understand that since Wizard101 Crowns cost $5USD for 2500, you're effectivly doing this for 92 cents/hour
 
