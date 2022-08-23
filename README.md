@@ -22,6 +22,9 @@
 - It takes about 13 minutes to complete the 10 quizes for one day (getting you 100 Crowns)
 - Understand that since Wizard101 Crowns cost $5USD for 2500, you're effectivly doing this for 92 cents/hour
 
+# Technical
+This program was written in Python. It uses [tkinter](https://docs.python.org/3/library/tk.html) as the primary GUI, and [Selenium](https://selenium-python.readthedocs.io/) as the automated Chrome browser controller. [Nuitka](https://nuitka.net/) was used to compile the python code into an executable (.exe) file.
+
 # Legal
 - Wizard101 is a trademark of KingsIsle Entertainment. I do not own, or claim to own any rights to their trademark. I am not affiliated with KingsIsle Entertainment in any way. 
 - While this works without issue, and does not cause bans now, I can not guarentee that this will be 100% safe from bans in the future. Use this software at your own risk.
