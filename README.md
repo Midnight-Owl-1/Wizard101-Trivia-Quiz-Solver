@@ -1,6 +1,6 @@
 # Wizard101 Trivia Quiz Solver
-This is a program that will automatically log into your Wizard101 account, and complete your 10 trivia quizzes, to help you easily collect your 100 daily free Crowns.
-This is "Semi-automated" because the program can not do the CAPTCHA by itself. It will prompt (with a beep) you when you need to complete the CAPTCHA.
+- This is a program that will automatically log into your Wizard101 account, and complete your 10 trivia quizzes, to help you easily collect your 100 daily free Crowns.
+- This is "Semi-automated" because the program can not do the CAPTCHA by itself. It will prompt (with a beep) you when you need to complete the CAPTCHA.
 
 # Setup
 - In the "Releases" section on this Github page, download the zip file for the latest release
