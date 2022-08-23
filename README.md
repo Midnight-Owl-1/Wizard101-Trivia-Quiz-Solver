@@ -4,7 +4,7 @@
 
 # Setup
 - In the "Releases" section on this Github page, download the zip file for the latest release
-- Unzip the contents of the zip file into a folder on your computer (ex. on the Desktop)
+- Unzip the contents of the zip file into a folder on your computer (ex. a new folder on the Desktop)
 - In the account.txt file, enter your username and password (replacing the spots with xxx)
 - Now you are able to run the program by double-clicking the "Wizard101 Quiz Solver.exe" file
 
