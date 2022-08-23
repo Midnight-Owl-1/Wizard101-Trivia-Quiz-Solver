@@ -7,6 +7,7 @@
 - Unzip the contents of the zip file into a folder on your computer (ex. a new folder on the Desktop)
 - In the account.txt file, enter your username and password (replacing the spots with xxx)
 - Now you are able to run the program by double-clicking the "Wizard101 Quiz Solver.exe" file
+- **Note**: If your Antivirus software raises flags, you can ignore them. You may need to "Allow" this program, or "Restore" it on Windows Security. This is not a malicious program. All of the [source code](https://github.com/Midnight-Owl-1/Wizard101-Trivia-Quiz-Solver/blob/main/Wizard101%20Quiz%20Solver.pyw) is available on this github for you to review.
 
 # Instructions of Use
 - Start the program by double clicking the "Wizard101 Quiz Solver.exe" file
